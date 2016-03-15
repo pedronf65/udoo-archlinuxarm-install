@@ -1,3 +1,4 @@
-# udoo-install
-UDOO installation files
+# udoo-archlinuxarm-install
+
+UDOO Arch Linux ARM installation files and testing
 
