@@ -1,0 +1,510 @@
+U-Boot 2015.01 (Jan 24 2015 - 18:35:39) Arch Linux ARM
+
+CPU:   Freescale i.MX6Q rev1.2 at 792 MHz
+Reset cause: POR
+Board: Udoo
+DRAM:  1 GiB
+MMC:   FSL_SDHC: 0
+*** Warning - bad CRC, using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+Net:   using phy at 6
+FEC [PRIME]
+Hit any key to stop autoboot:  0
+switch to partitions #0, OK
+mmc0 is current device
+SD/MMC found on device 0
+Checking for: /boot/uEnv.txt ...
+5357344 bytes read in 301 ms (17 MiB/s)
+loading /boot/dtbs/imx6q-udoo.dtb ...
+48811 bytes read in 94 ms (506.8 KiB/s)
+** File not found /boot/initramfs-linux.img **
+Kernel image @ 0x12000000 [ 0x000000 - 0x51bf20 ]
+## Flattened Device Tree blob at 18000000
+   Booting using the fdt blob at 0x18000000
+   Using Device Tree in place at 18000000, end 1800eeaa
+
+Starting kernel ...
+
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Initializing cgroup subsys cpuacct
+[    0.000000] Linux version 4.4.1-1-ARCH (builduser@leming) (gcc version 5.3.0 (GCC) ) #1 SMP Mon Feb 1 20:37:04 MST 2016
+[    0.000000] CPU: ARMv7 Processor [412fc09a] revision 10 (ARMv7), cr=10c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine model: Udoo i.MX6 Quad Board
+[    0.000000] cma: Reserved 24 MiB at 0x4e800000
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] PERCPU: Embedded 13 pages/cpu @ef69c000 s23616 r8192 d21440 u53248
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 260416
+[    0.000000] Kernel command line: console=ttymxc1,115200 root=/dev/mmcblk0p1 rw rootwait video=
+[    0.000000] PID hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Memory: 994252K/1048576K available (11242K kernel code, 1241K rwdata, 4612K rodata, 1248K init, 927K bss, 29748K reserved, 24576K cma-reserved, 237568K highmem)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+[    0.000000]     vmalloc : 0xf0800000 - 0xff800000   ( 240 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xf0000000   ( 768 MB)
+[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+[    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+[    0.000000]       .text : 0xc0008000 - 0xc0f83adc   (15855 kB)
+[    0.000000]       .init : 0xc0f84000 - 0xc10bc000   (1248 kB)
+[    0.000000]       .data : 0xc10bc000 - 0xc11f2718   (1242 kB)
+[    0.000000]        .bss : 0xc11f5000 - 0xc12dcfd0   ( 928 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] Hierarchical RCU implementation.
+[    0.000000]  Build-time adjustment of leaf fanout to 32.
+[    0.000000]  RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=4.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=32, nr_cpu_ids=4
+[    0.000000] NR_IRQS:16 nr_irqs:16 16
+[    0.000000] L2C-310 erratum 769419 enabled
+[    0.000000] L2C-310 enabling early BRESP for Cortex-A9
+[    0.000000] L2C-310 full line of zeros enabled for Cortex-A9
+[    0.000000] L2C-310 ID prefetch enabled, offset 1 lines
+[    0.000000] L2C-310 dynamic clock gating enabled, standby mode enabled
+[    0.000000] L2C-310 cache controller enabled, 16 ways, 1024 kB
+[    0.000000] L2C-310: CACHE_ID 0x410000c7, AUX_CTRL 0x76070001
+[    0.000000] GIC physical location is 0xa01000
+[    0.000000] Switching to timer-based delay loop, resolution 333ns
+[    0.000008] sched_clock: 32 bits at 3000kHz, resolution 333ns, wraps every 715827882841ns
+[    0.000029] clocksource: mxc_timer1: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 637086815595 ns
+[    0.004449] Console: colour dummy device 80x30
+[    0.004482] Calibrating delay loop (skipped), value calculated using timer frequency.. 6.00 BogoMIPS (lpj=15000)
+[    0.004500] pid_max: default: 32768 minimum: 301
+[    0.004628] Security Framework initialized
+[    0.004812] Mount-cache hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.004829] Mountpoint-cache hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.005611] Initializing cgroup subsys io
+[    0.005637] Initializing cgroup subsys memory
+[    0.005676] Initializing cgroup subsys devices
+[    0.005696] Initializing cgroup subsys freezer
+[    0.005715] Initializing cgroup subsys net_cls
+[    0.005730] Initializing cgroup subsys perf_event
+[    0.005746] Initializing cgroup subsys net_prio
+[    0.005764] Initializing cgroup subsys pids
+[    0.005825] CPU: Testing write buffer coherency: ok
+[    0.005862] ftrace: allocating 39857 entries in 117 pages
+[    0.085908] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.086051] Setting up static identity map for 0x10008280 - 0x10008318
+[    0.091922] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+[    0.092708] CPU2: thread -1, cpu 2, socket 0, mpidr 80000002
+[    0.093479] CPU3: thread -1, cpu 3, socket 0, mpidr 80000003
+[    0.093557] Brought up 4 CPUs
+[    0.093583] SMP: Total of 4 processors activated (24.00 BogoMIPS).
+[    0.093592] CPU: All CPU(s) started in SVC mode.
+[    0.094617] devtmpfs: initialized
+[    0.108414] VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+[    0.109444] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 9556302231375000 ns
+[    0.111433] xor: measuring software checksum speed
+[    0.159002]    arm4regs  :  1181.600 MB/sec
+[    0.208998]    8regs     :   904.000 MB/sec
+[    0.259001]    32regs    :   958.400 MB/sec
+[    0.309003]    neon      :   882.400 MB/sec
+[    0.309015] xor: using function: arm4regs (1181.600 MB/sec)
+[    0.309150] pinctrl core: initialized pinctrl subsystem
+[    0.310741] NET: Registered protocol family 16
+[    0.313635] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.316360] CPU identified as i.MX6Q, silicon rev 1.2
+[    0.337380] No ATAGs?
+[    0.337423] hw-breakpoint: found 5 (+1 reserved) breakpoint and 1 watchpoint registers.
+[    0.337435] hw-breakpoint: maximum watchpoint size is 4 bytes.
+[    0.339913] imx6q-pinctrl 20e0000.iomuxc: initialized IMX pinctrl driver
+[    0.341208] Serial: AMBA PL011 UART driver
+[    0.449178] raid6: int32x1  gen()   106 MB/s
+[    0.534197] raid6: int32x1  xor()   130 MB/s
+[    0.619063] raid6: int32x2  gen()   138 MB/s
+[    0.704197] raid6: int32x2  xor()   124 MB/s
+[    0.789283] raid6: int32x4  gen()   142 MB/s
+[    0.874098] raid6: int32x4  xor()   110 MB/s
+[    0.959188] raid6: int32x8  gen()   139 MB/s
+[    1.044030] raid6: int32x8  xor()   103 MB/s
+[    1.129059] raid6: neonx1   gen()   614 MB/s
+[    1.214058] raid6: neonx1   xor()   455 MB/s
+[    1.299069] raid6: neonx2   gen()   660 MB/s
+[    1.384051] raid6: neonx2   xor()   581 MB/s
+[    1.469045] raid6: neonx4   gen()   448 MB/s
+[    1.554040] raid6: neonx4   xor()   419 MB/s
+[    1.639142] raid6: neonx8   gen()   260 MB/s
+[    1.724021] raid6: neonx8   xor()   221 MB/s
+[    1.724031] raid6: using algorithm neonx2 gen() 660 MB/s
+[    1.724039] raid6: .... xor() 581 MB/s, rmw enabled
+[    1.724049] raid6: using intx1 recovery algorithm
+[    1.728664] mxs-dma 110000.dma-apbh: initialized
+[    1.734627] vgaarb: loaded
+[    1.735780] SCSI subsystem initialized
+[    1.736329] usbcore: registered new interface driver usbfs
+[    1.736402] usbcore: registered new interface driver hub
+[    1.736506] usbcore: registered new device driver usb
+[    1.738329] i2c i2c-1: IMX I2C adapter registered
+[    1.738350] i2c i2c-1: can't use DMA
+[    1.738963] i2c i2c-2: IMX I2C adapter registered
+[    1.738982] i2c i2c-2: can't use DMA
+[    1.740008] media: Linux media interface: v0.10
+[    1.740075] Linux video capture interface: v2.00
+[    1.740190] pps_core: LinuxPPS API ver. 1 registered
+[    1.740200] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    1.740233] PTP clock support registered
+[    1.740302] EDAC MC: Ver: 3.0.0
+[    1.741835] Advanced Linux Sound Architecture Driver Initialized.
+[    1.742533] NetLabel: Initializing
+[    1.742546] NetLabel:  domain hash size = 128
+[    1.742553] NetLabel:  protocols = UNLABELED CIPSOv4
+[    1.742608] NetLabel:  unlabeled traffic allowed by default
+[    1.742962] clocksource: Switched to clocksource mxc_timer1
+[    1.842151] NET: Registered protocol family 2
+[    1.842921] TCP established hash table entries: 8192 (order: 3, 32768 bytes)
+[    1.843055] TCP bind hash table entries: 8192 (order: 4, 65536 bytes)
+[    1.843191] TCP: Hash tables configured (established 8192 bind 8192)
+[    1.843297] UDP hash table entries: 512 (order: 2, 16384 bytes)
+[    1.843353] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+[    1.843634] NET: Registered protocol family 1
+[    1.844148] RPC: Registered named UNIX socket transport module.
+[    1.844162] RPC: Registered udp transport module.
+[    1.844171] RPC: Registered tcp transport module.
+[    1.844179] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    1.845157] hw perfevents: enabled with armv7_cortex_a9 PMU driver, 7 counters available
+[    1.847583] futex hash table entries: 1024 (order: 4, 65536 bytes)
+[    1.855275] zbud: loaded
+[    1.855767] VFS: Disk quotas dquot_6.6.0
+[    1.855973] VFS: Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[    1.857871] NFS: Registering the id_resolver key type
+[    1.857926] Key type id_resolver registered
+[    1.857937] Key type id_legacy registered
+[    1.858002] nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+[    1.865944] bounce: pool size: 64 pages
+[    1.866161] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+[    1.866342] io scheduler noop registered
+[    1.866365] io scheduler deadline registered
+[    1.866432] io scheduler cfq registered (default)
+[    1.878979] imx-sdma 20ec000.sdma: Direct firmware load for imx/sdma/sdma-imx6q.bin failed with error -2
+[    1.879001] imx-sdma 20ec000.sdma: external firmware not found, using ROM firmware
+[    1.886088] Serial: 8250/16550 driver, 6 ports, IRQ sharing disabled
+[    1.888437] Serial: AMBA driver
+[    1.889283] 21e8000.serial: ttymxc1 at MMIO 0x21e8000 (irq = 287, base_baud = 5000000) is a IMX
+[    2.744990] console [ttymxc1] enabled
+[    2.749275] 21f0000.serial: ttymxc3 at MMIO 0x21f0000 (irq = 288, base_baud = 5000000) is a IMX
+[    2.759936] [drm] Initialized drm 1.1.0 20060810
+[    2.766592] exynos-drm-ipp exynos-drm-ipp: drm ipp registered successfully.
+[    2.783783] loop: module loaded
+[    2.788991] Loading iSCSI transport class v2.0-870.
+[    2.794310] iscsi: registered transport (tcp)
+[    2.799815] ahci-imx 2200000.sata: fsl,transmit-level-mV not specified, using 00000024
+[    2.807778] ahci-imx 2200000.sata: fsl,transmit-boost-mdB not specified, using 00000480
+[    2.815813] ahci-imx 2200000.sata: fsl,transmit-atten-16ths not specified, using 00002000
+[    2.824021] ahci-imx 2200000.sata: fsl,receive-eq-mdB not specified, using 05000000
+[    2.834572] ahci-imx 2200000.sata: SSS flag set, parallel bus scan disabled
+[    2.841601] ahci-imx 2200000.sata: AHCI 0001.0300 32 slots 1 ports 3 Gbps 0x1 impl platform mode
+[    2.850426] ahci-imx 2200000.sata: flags: ncq sntf stag pm led clo only pmp pio slum part ccc apst
+[    2.860935] scsi host0: ahci-imx
+[    2.864538] ata1: SATA max UDMA/133 mmio [mem 0x02200000-0x02203fff] port 0x100 irq 291
+[    2.877414] imx6q-pinctrl 20e0000.iomuxc: pin MX6Q_PAD_GPIO_16 already requested by 20e0000.iomuxc; cannot claim for 2188000.ethernet
+[    2.889457] imx6q-pinctrl 20e0000.iomuxc: pin-146 (2188000.ethernet) status -22
+[    2.896799] imx6q-pinctrl 20e0000.iomuxc: could not request pin 146 (MX6Q_PAD_GPIO_16) from group enetgrp  on device 20e0000.iomuxc
+[    2.908656] fec 2188000.ethernet: Error applying setting, reverse things back
+[    2.915944] 2188000.ethernet supply phy not found, using dummy regulator
+[    2.923252] pps pps0: new PPS source ptp0
+[    2.932611] libphy: fec_enet_mii_bus: probed
+[    2.937550] fec 2188000.ethernet eth0: registered PHC device 0
+[    2.946836] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    2.953412] ehci-pci: EHCI PCI platform driver
+[    2.957930] ehci-platform: EHCI generic platform driver
+[    2.963460] ehci-mxc: Freescale On-Chip EHCI Host driver
+[    2.968910] ehci-omap: OMAP-EHCI Host Controller driver
+[    2.974327] ehci-orion: EHCI orion driver
+[    2.978526] ehci-exynos: EHCI EXYNOS driver
+[    2.982906] tegra-ehci: Tegra EHCI driver
+[    2.987137] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    2.993366] ohci-pci: OHCI PCI platform driver
+[    2.997898] ohci-platform: OHCI generic platform driver
+[    3.003368] ohci-exynos: OHCI EXYNOS driver
+[    3.007753] ohci-omap3: OHCI OMAP3 driver
+[    3.012379] usbcore: registered new interface driver uas
+[    3.017807] usbcore: registered new interface driver usb-storage
+[    3.023892] usbcore: registered new interface driver ums-cypress
+[    3.029976] usbcore: registered new interface driver ums_eneub6250
+[    3.036244] usbcore: registered new interface driver ums-freecom
+[    3.042329] usbcore: registered new interface driver ums-isd200
+[    3.048369] usbcore: registered new interface driver ums-usbat
+[    3.057006] 2184200.usb supply vbus not found, using dummy regulator
+[    3.067360] ci_hdrc ci_hdrc.0: EHCI Host Controller
+[    3.072304] ci_hdrc ci_hdrc.0: new USB bus registered, assigned bus number 1
+[    3.088003] ci_hdrc ci_hdrc.0: USB 2.0 started, EHCI 1.00
+[    3.093643] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[    3.100472] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    3.107719] usb usb1: Product: EHCI Host Controller
+[    3.112625] usb usb1: Manufacturer: Linux 4.4.1-1-ARCH ehci_hcd
+[    3.118572] usb usb1: SerialNumber: ci_hdrc.0
+[    3.123686] hub 1-0:1.0: USB hub found
+[    3.127916] imx6q-pinctrl 20e0000.iomuxc: pin MX6Q_PAD_GPIO_17 already requested by 20e0000.iomuxc; cannot claim for 2184200.usb:usb2415@01
+[    3.140478] imx6q-pinctrl 20e0000.iomuxc: pin-147 (2184200.usb:usb2415@01) status -22
+[    3.148338] imx6q-pinctrl 20e0000.iomuxc: could not request pin 147 (MX6Q_PAD_GPIO_17) from group usbhgrp  on device 20e0000.iomuxc
+[    3.160186] usb_generic_onboard 2184200.usb:usb2415@01: Error applying setting, reverse things back
+[    3.169416] hub 1-0:1.0: 1 port detected
+[    3.178644] snvs_rtc 20cc000.snvs:snvs-rtc-lp: rtc core: registered 20cc000.snvs:snvs-r as rtc0
+[    3.188240] i2c /dev entries driver
+[    3.193008] ata1: SATA link down (SStatus 0 SControl 300)
+[    3.198488] ahci-imx 2200000.sata: no device found, disabling link.
+[    3.204789] ahci-imx 2200000.sata: pass ahci_imx..hotplug=1 to enable hotplug
+[    3.213577] coda 2040000.vpu: Direct firmware load for v4l-coda960-imx6q.bin failed with error -2
+[    3.222502] coda 2040000.vpu: firmware request failed
+[    3.223068] Samsung TV Mixer driver, (c) 2010-2011 Samsung Electronics Co., Ltd.
+[    3.223068]
+[    3.235445] imx2-wdt 20bc000.wdog: timeout 60 sec (nowayout=1)
+[    3.237701] sdhci: Secure Digital Host Controller Interface driver
+[    3.237704] sdhci: Copyright(c) Pierre Ossman
+[    3.238771] Synopsys Designware Multimedia Card Interface Driver
+[    3.239751] sdhci-pltfm: SDHCI platform and OF driver helper
+[    3.240501] /soc/aips-bus@02100000/usdhc@02198000: voltage-ranges unspecified
+[    3.240512] sdhci-esdhc-imx 2198000.usdhc: could not get ultra high speed state, work on normal mode
+[    3.240681] sdhci-esdhc-imx 2198000.usdhc: No vmmc regulator found
+[    3.240689] sdhci-esdhc-imx 2198000.usdhc: No vqmmc regulator found
+[    3.283005] mmc0: SDHCI controller on 2198000.usdhc [2198000.usdhc] using ADMA
+[    3.284693] ledtrig-cpu: registered to indicate activity on CPUs
+[    3.284795] hidraw: raw HID events driver (C) Jiri Kosina
+[    3.285347] usbcore: registered new interface driver usbhid
+[    3.285350] usbhid: USB HID core driver
+[    3.285635] ashmem: initialized
+[    3.292169] oprofile: using arm/armv7-ca9
+[    3.293449] NET: Registered protocol family 10
+[    3.294761] mip6: Mobile IPv6
+[    3.294780] NET: Registered protocol family 17
+[    3.294912] Key type dns_resolver registered
+[    3.308780] ThumbEE CPU extension supported.
+[    3.308799] Registering SWP/SWPB emulation handler
+[    3.309503] registered taskstats version 1
+[    3.309654] zswap: loaded using pool lzo/zbud
+[    3.314031] Btrfs loaded
+[    3.315260] Key type encrypted registered
+[    3.316790] imx_thermal 2000000.aips-bus:tempmon: Extended Commercial CPU temperature grade - max:105C critical:100C passive:95C
+[    3.321765] snvs_rtc 20cc000.snvs:snvs-rtc-lp: setting system clock to 1970-01-01 00:00:00 UTC (0)
+[    3.324870] sr_init: No PMIC hook to init smartreflex
+[    3.324990] sr_init: platform driver register failed for SR
+[    3.325004] of_cfs_init
+[    3.325069] of_cfs_init: OK
+[    3.336927] Unable to find PPMU node
+[    3.336946] exynos5-bus-int: probe of exynos5-bus-int failed with error -2
+[    3.337310] ALSA device list:
+[    3.337313]   No soundcards found.
+[    3.434912] Waiting for root device /dev/mmcblk0p1...
+[    3.455632] mmc0: host does not support reading read-only switch, assuming write-enable
+[    3.469734] mmc0: new high speed SDHC card at address 0007
+[    3.475902] mmcblk0: mmc0:0007 SL16G 14.4 GiB
+[    3.481907]  mmcblk0: p1
+[    3.551486] EXT4-fs (mmcblk0p1): couldn't mount as ext3 due to feature incompatibilities
+[    3.560535] EXT4-fs (mmcblk0p1): couldn't mount as ext2 due to feature incompatibilities
+[    3.642990] usb 1-1: new high-speed USB device number 2 using ci_hdrc
+[    3.736101] EXT4-fs (mmcblk0p1): mounted filesystem with ordered data mode. Opts: (null)
+[    3.744248] VFS: Mounted root (ext4 filesystem) on device 179:1.
+[    3.753981] devtmpfs: mounted
+[    3.758045] Freeing unused kernel memory: 1248K (c0f84000 - c10bc000)
+[    3.778487] usb 1-1: New USB device found, idVendor=0424, idProduct=2514
+[    3.785235] usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[    3.793151] hub 1-1:1.0: USB hub found
+[    3.797103] hub 1-1:1.0: 4 ports detected
+[    4.083012] usb 1-1.1: new high-speed USB device number 3 using ci_hdrc
+[    4.155140] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    4.167900] random: systemd urandom read with 7 bits of entropy available
+[    4.198680] systemd[1]: systemd 228 running in system mode. (+PAM -AUDIT -SELINUX -IMA -APPARMOR +SMACK -SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN)
+[    4.217215] systemd[1]: Detected architecture arm.
+
+Welcome to Arch Linux ARM!
+
+[    4.234264] systemd[1]: Set hostname to <alarm>.
+[    4.410745] usb 1-1.1: New USB device found, idVendor=046d, idProduct=0825
+[    4.417689] usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=2
+[    4.425067] usb 1-1.1: SerialNumber: 3600EED0
+[    4.503016] usb 1-1.3: new high-speed USB device number 4 using ci_hdrc
+[    4.631244] usb 1-1.3: New USB device found, idVendor=148f, idProduct=5370
+[    4.638192] usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    4.645531] usb 1-1.3: Product: 802.11 n WLAN
+[    4.649917] usb 1-1.3: Manufacturer: Ralink
+[    4.654120] usb 1-1.3: SerialNumber: 1.0
+[    4.927001] random: nonblocking pool is initialized
+[    5.135783] systemd[1]: display-manager.service: Cannot add dependency job, ignoring: Unit display-manager.service failed to load: No such file or directory.
+[    5.152748] systemd[1]: Listening on udev Control Socket.
+[  OK  ] Listening on udev Control Socket.
+[    5.168220] systemd[1]: Listening on LVM2 metadata daemon socket.
+[  OK  ] Listening on LVM2 metadata daemon socket.
+[    5.185158] systemd[1]: Created slice User and Session Slice.
+[  OK  ] Created slice User and Session Slice.
+[    5.203101] systemd[1]: Reached target Remote File Systems.
+[  OK  ] Reached target Remote File Systems.
+[    5.248967] systemd[1]: Listening on Journal Socket (/dev/log).
+[  OK  ] Listening on Journal Socket (/dev/log).
+[    5.268353] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.
+[  OK  ] Started Dispatch Password Requests to Console Directory Watch.
+[    5.288223] systemd[1]: Listening on Device-mapper event daemon FIFOs.
+[  OK  ] Listening on Device-mapper event daemon FIFOs.
+[    5.308177] systemd[1]: Listening on udev Kernel Socket.
+[  OK  ] Listening on udev Kernel Socket.
+[    5.323370] systemd[1]: Listening on Network Service Netlink Socket.
+[  OK  ] Listening on Network Service Netlink Socket.
+[    5.338223] systemd[1]: Listening on /dev/initctl Compatibility Named Pipe.
+[  OK  ] Listening on /dev/initctl Compatibility Named Pipe.
+[    5.358232] systemd[1]: Listening on Journal Socket.
+[  OK  ] Listening on Journal Socket.
+[    5.373949] systemd[1]: Created slice System Slice.
+[  OK  ] Created slice System Slice.
+[    5.403488] systemd[1]: Starting Setup Virtual Console...
+         Starting Setup Virtual Console...
+[    5.422420] systemd[1]: Mounting Debug File System...
+         Mounting Debug File System...
+[    5.442093] systemd[1]: Mounting POSIX Message Queue File System...
+         Mounting POSIX Message Queue File System...
+[    5.459600] systemd[1]: Created slice system-getty.slice.
+[  OK  ] Created slice system-getty.slice.
+[    5.493513] systemd[1]: Starting Remount Root and Kernel File Systems...
+         Starting Remount Root and Kernel File Systems...
+[    5.519537] systemd[1]: Mounting Configuration File System...
+         Mounting Configuration File System...
+[    5.541668] systemd[1]: Starting Apply Kernel Variables...
+         Starting Apply Kernel Variables...
+[    5.571025] systemd[1]: Mounting Temporary Directory...
+         Mounting Temporary Directory...
+[    5.589242] systemd[1]: Created slice system-serial\x2dgetty.slice.
+[  OK  ] Created slice system-serial\x2dgetty.slice.
+[    5.608126] systemd[1]: Reached target Swap.
+[  OK  ] Reached target Swap.
+[    5.623108] systemd[1]: Reached target Encrypted Volumes.
+[  OK  ] Reached target Encrypted Volumes.
+[    5.638345] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[  OK  ] Started Forward Password Requests to Wall Directory Watch.
+[    5.658112] systemd[1]: Reached target Paths.
+[  OK  ] Reached target Paths.
+[    5.688474] systemd[1]: Starting Journal Service...
+         Starting Journal Service...
+[    5.707364] systemd[1]: Starting Create list of required static device nodes for the current kernel...
+         Starting Create list of required st... nodes for the current kernel...
+[    5.728985] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[  OK  ] Set up automount Arbitrary Executab...ats File System Automount Point.
+[    5.760929] systemd[1]: Reached target Slices.
+[  OK  ] Reached target Slices.
+[    5.799660] systemd[1]: Mounted POSIX Message Queue File System.
+[  OK  ] Mounted POSIX Message Queue File System.
+[    5.818193] systemd[1]: Mounted Debug File System.
+[  OK  ] Mounted Debug File System.
+[    5.833140] systemd[1]: Mounted Configuration File System.
+[  OK  ] Mounted Configuration File System.
+[    5.848132] systemd[1]: Mounted Temporary Directory.
+[  OK  ] Mounted Temporary Directory.
+[    5.864507] systemd[1]: Started Setup Virtual Console.
+[  OK  ] Started Setup Virtual Console.
+[    5.880418] systemd[1]: Started Remount Root and Kernel File Systems.
+[  OK  ] Started Remount Root and Kernel File Systems.
+[    5.899971] systemd[1]: Started Apply Kernel Variables.
+[  OK  ] Started Apply Kernel Variables.
+[    5.919939] systemd[1]: Started Create list of required static device nodes for the current kernel.
+[  OK  ] Started Create list of required sta...ce nodes for the current kernel.
+[    9.193685] systemd[1]: Starting Rebuild Hardware Database...
+         Starting Rebuild Hardware Database...
+[    9.216989] systemd[1]: Starting Load/Save Random Seed...
+         Starting Load/Save Random Seed...
+[    9.236839] systemd[1]: Starting Create System Users...
+         Starting Create System Users...
+[    9.257151] systemd[1]: Starting Rebuild Dynamic Linker Cache...
+         Starting Rebuild Dynamic Linker Cache...
+[    9.282921] systemd[1]: Started Load/Save Random Seed.
+[  OK  ] Started Load/Save Random Seed.
+[    9.309158] systemd[1]: Started Journal Service.
+[  OK  ] Started Journal Service.
+[  OK  ] Started Create System Users.
+         Starting Create Static Device Nodes in /dev...
+         Starting Flush Journal to Persistent Storage...
+[    9.546904] systemd-journald[168]: Received request to flush runtime journal from PID 1
+[  OK  ] Started Create Static Device Nodes in /dev.
+[  OK  ] Reached target Local File Systems (Pre).
+[  OK  ] Reached target Local File Systems.
+         Starting Rebuild Journal Catalog...
+         Starting udev Kernel Device Manager...
+[  OK  ] Started Rebuild Journal Catalog.
+[  OK  ] Started Flush Journal to Persistent Storage.
+         Starting Create Volatile Files and Directories...
+[  OK  ] Started Create Volatile Files and Directories.
+         Starting Network Time Synchronization...
+         Starting Update UTMP about System Boot/Shutdown...
+[  OK  ] Started udev Kernel Device Manager.
+[  OK  ] Started Network Time Synchronization.
+[  OK  ] Reached target System Time Synchronized.
+[  OK  ] Started Update UTMP about System Boot/Shutdown.
+[  OK  ] Started Rebuild Hardware Database.
+         Starting udev Coldplug all Devices...
+[  OK  ] Started udev Coldplug all Devices.
+[  OK  ] Started Rebuild Dynamic Linker Cache.
+         Starting Update is Completed...
+[  OK  ] Started Update is Completed.
+[  OK  ] Reached target System Initialization.
+[  OK  ] Started Daily man-db cache update.
+[  OK  [   17.184767] etnaviv gpu-subsystem: bound 134000.gpu (ops gpu_ops [etnaviv])
+] Started Daily Cleanup of Tempor[   17.192353] etnaviv gpu-subsystem: bound 130000.gpu (ops gpu_ops [etnaviv])
+ary Directories.
+[  OK  [   17.205645] etnaviv gpu-subsystem: bound 2204000.gpu (ops gpu_ops [etnaviv])
+] Started Daily verification of password and group files.
+[   17.218180] etnaviv-gpu 134000.gpu: model: GC320, revision: 5007
+[  OK  ] Started Daily rotation of log files.
+[  OK  ] Reached target Timers.
+[  OK  ] Listening on D-Bus System Message Bus Socket.
+[  OK  ] Reached target Sockets.
+[   17.266173] etnaviv-gpu 130000.gpu: model: GC2000, revision: 5108
+[  OK  ] Reached target Basic System.
+[   17.283378] caam 2100000.caam: Entropy delay = 3200
+[   17.349116] caam 2100000.caam: Instantiated RNG4 SH0
+[   17.409875] caam 2100000.caam: Instantiated RNG4 SH1
+[   17.415073] caam 2100000.caam: device ID = 0x0a16010000000000 (Era 4)
+[   17.421586] caam 2100000.caam: job rings = 2, qi = 0
+         Starting Login Service...
+[  OK  ] Started D-Bus System Message Bus.
+[   17.465173] etnaviv-gpu 2204000.gpu: model: GC355, revision: 1215
+[   17.467785] fsl-asrc 2034000.asrc: driver registered
+[   17.468085] uvcvideo: Found UVC 1.00 device <unnamed> (046d:0825)
+[   17.482653] etnaviv-gpu 2204000.gpu: Ignoring GPU with VG and FE2.0
+[   17.488986] etnaviv-gpu 2204000.gpu: hw init failed: -6
+[   17.499526] imx-ipuv3 2400000.ipu: IPUv3H probed
+[   17.507276] imx-ipuv3 2800000.ipu: IPUv3H probed
+[   17.566603] input: UVC Camera (046d:0825) as /devices/soc0/soc/2100000.aips-bus/2184200.usb/ci_hdrc.0/usb1/1-1/1-1.1/1-1.1:1.0/input/input0
+[   17.580390] usbcore: registered new interface driver uvcvideo
+[   17.586197] USB Video Class driver (1.1.1)
+[   17.803020] usb 1-1.3: reset high-speed USB device number 4 using ci_hdrc
+         Starting Network Service...
+         Starting Permit User Sessions...
+[   17.924119] ieee80211 phy0: rt2x00_set_rt: Info - RT chipset 5390, rev 0502 detected
+         Starting SSH Key Generation...
+[   17.971356] ieee80211 phy0: rt2x00_set_rf: Info - RF chipset 5370 detected
+[  OK  ] Started Entropy Harvesting Daemon.
+[  OK  ] Started Network Service.
+[  OK  ] Started Permit User Sessions.
+[   18.059187] fec 2188000.ethernet eth0: Freescale FEC PHY driver [Generic PHY] (mii_bus:phy_addr=2188000.ethernet:06, irq=-1)
+[   18.071570] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   18.084426] usbcore: registered new interface driver rt2800usb
+[  OK  ] Found device /dev/ttymxc1.
+[  OK  ] Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+[  OK  ] Started Getty on tty1.
+[  OK  ] Started Serial Getty on ttymxc1.
+[  OK  ] Reached target Login Prompts.
+[  OK  ] Reached target Network.
+         Starting Network Name Resolution...
+[  OK  ] Started Login Service.
+         Starting Load/Save RF Kill Switch Status...
+[  OK  ] Started Network Name Resolution.
+[  OK  ] Started Load/Save RF Kill Switch Status.
+[   18.920242] usb 1-1.1: set resolution quirk: cval->res = 384
+[   18.930642] usbcore: registered new interface driver snd-usb-audio
+[  OK  ] Reached target Sound Card.
+[   22.058421] fec 2188000.ethernet eth0: Link is Up - 1Gbps/Full - flow control rx/tx
+[   22.066139] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[  OK  ] Started SSH Key Generation.
+[  OK  ] Started OpenSSH Daemon.
+[  OK  ] Reached target Multi-User System.
+[  OK  ] Reached target Graphical Interface.
+
+Arch Linux 4.4.1-1-ARCH (ttymxc1)
+
+alarm login: root
+Password:
+[root@alarm ~]# uname -a
+Linux alarm 4.4.1-1-ARCH #1 SMP Mon Feb 1 20:37:04 MST 2016 armv7l GNU/Linux
+[root@alarm ~]#
